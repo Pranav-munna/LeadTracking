@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Network"
+            android:textColor="@color/textOrange"
+            android:textSize="16dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirImgVwImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="@color/background_gray_dark"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/edtTxtNAme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnrDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stroke_background"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnrAccount"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="Account"
+            android:background="@drawable/stroke_background"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spnrCountry"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="Country"
+            android:background="@drawable/stroke_background"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EdtTxtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EdtTxtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/button_round_orange"
+            android:text="Add Network"
+            android:textColor="@color/textWhite" />
+
+    </LinearLayout>
+
+
+</ScrollView>

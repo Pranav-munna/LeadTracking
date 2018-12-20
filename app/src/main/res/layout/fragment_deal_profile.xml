@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+
+    <RelativeLayout
+        android:id="@+id/RLtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawableTint="@color/colorAccent"
+            android:text="Deals"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/TxtVwNameTop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+
+        <ImageButton
+            android:id="@+id/imgBtnEdit"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_edit"
+            android:tint="@color/colorAccent" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtVwEstimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLtoolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Estimate Revenue:$121,245.45"
+        android:textColor="@color/textHint" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirImgVwProfile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtVwEstimate"
+        android:layout_marginLeft="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/profileimage" />
+
+    <TextView
+        android:id="@+id/txtVwName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwEstimate"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/btnCall"
+        android:layout_toRightOf="@+id/cirImgVwProfile"
+        android:text="Mathew John"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="18dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtVwName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/cirImgVwProfile"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtVwEstimate"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_round_orange"
+        android:text="Call"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="12sp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/cirImgVwProfile"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_white"
+        app:tabTextAppearance="@style/MyCustomTextAppearance" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tablayout"
+        android:background="@color/background_white" />
+
+</RelativeLayout>

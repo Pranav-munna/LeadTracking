@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:text="Filter"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Done"
+            android:textColor="@color/textWhite"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Account"
+            android:textColor="@color/textOrange" />
+
+        <Button
+            android:id="@+id/btnDesignation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="Designation"
+            android:textColor="@color/textBlack" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAccount"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <CheckBox
+            android:id="@+id/chkBxAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingLeft="25dp"
+            android:text="All"
+            android:textColor="@color/textBlack"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/chkBxAccount"
+            android:background="@color/background_gray_dark" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recViewAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/background_white" />
+
+    <RelativeLayout
+        android:id="@+id/rlDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/chkBxDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:paddingLeft="25dp"
+            android:text="All"
+            android:textColor="@color/textBlack"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/chkBxDesignation"
+            android:background="@color/background_gray_dark" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecViewDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tablayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/background_white"
+        android:visibility="gone" />
+
+</LinearLayout>

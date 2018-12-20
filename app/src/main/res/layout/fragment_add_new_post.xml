@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add New Post"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="X"
+            android:textColor="@color/textHint" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_gray"
+        android:padding="22dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_cam" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="@color/textBlack"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/stroke_background"
+        android:hint="Enter Subject or Heading"
+        android:paddingLeft="10dp"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Your feed"
+            android:textColor="@color/textBlack"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_smile" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke_background"
+        android:gravity="start"
+        android:hint="Enter Subject or Heading"
+        android:inputType="textMultiLine"
+        android:maxLines="6"
+        android:minHeight="100dp"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_round_orange"
+        android:text="Post feed"
+        android:textColor="@color/textWhite"
+        android:textSize="12dp" />
+
+</LinearLayout>

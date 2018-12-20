@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Scoreboard"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvScoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/background_white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_home"
+            android:padding="8dp"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnNetwork"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_network"
+            android:padding="8dp"
+            android:text="Network"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnDeals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_deals"
+            android:padding="8dp"
+            android:text="Deals"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnScoreBd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTint="@color/textBlue"
+            android:drawableTop="@drawable/ic_star_score"
+            android:padding="8dp"
+            android:text="Scoreboard"
+            android:textAllCaps="false"
+            android:textColor="@color/textBlue"
+            android:textSize="8dp" />
+
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:drawableTop="@drawable/ic_user"
+            android:drawablePadding="2dp"
+            android:text="My Profile"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

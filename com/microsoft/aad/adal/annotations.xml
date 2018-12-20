@@ -1,0 +1,5 @@
+<root>
+    <item name='com.microsoft.aad.adal.AuthenticationCallback'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

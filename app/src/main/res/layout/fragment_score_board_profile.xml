@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            android:tint="@color/btnWhite" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:tint="@color/btnWhite"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVwPRofile"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/background_gray_dark"
+                android:gravity="center|top"
+                android:text="p"
+                android:textColor="@color/textWhite"
+                android:textSize="120dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imbVwPRofile"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/del_img2" />
+
+
+            <RelativeLayout
+                android:id="@+id/rL"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignBottom="@+id/imbVwPRofile"
+                android:background="@color/transparentColor"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtVwname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:maxLines="2"
+                    android:text="Priya George"
+                    android:textColor="@color/textWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtVwname"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rL"
+                android:padding="10dp"
+                android:text="Profile Details"
+                android:textColor="@color/textOrange"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtVwEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rL"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/textOrange"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVwEdit"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="First Name"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVwEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvname"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVwEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvlname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvname"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Last Name"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtLname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvlname"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtLname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlname"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Designation"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtdesig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvDesignation"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtdesig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignation"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Location"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignation"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvloc"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDesignation"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvloc"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Email"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvloc"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvEmail"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <!-- <EditText
+                 android:id="@+id/edtEmail"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:layout_below="@+id/tvloc"
+                 android:layout_marginRight="10dp"
+                 android:layout_toRightOf="@+id/tvContact"
+                 android:gravity="end"
+                 android:inputType="textEmailAddress"
+                 android:maxLines="1"
+                 android:padding="10dp"
+                 android:textSize="14dp"
+                 android:visibility="gone" />-->
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Contact number"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvOfficeContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContact"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Office number"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtOfficeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContact"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvOfficeContact"
+                android:gravity="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/textBlack"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edtOfficeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContact"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tvContact"
+                android:gravity="end"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvOfficeContact"
+                android:padding="10dp"
+                android:text="About Me"
+                android:textColor="@color/textOrange"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAbt"
+                android:layout_margin="10dp"
+                android:minHeight="30dp"
+                android:padding="10dp"
+                android:textColor="@color/textBlack" />
+
+            <EditText
+                android:id="@+id/edtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAbt"
+                android:layout_margin="10dp"
+                android:minHeight="30dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/background_white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_home"
+            android:padding="8dp"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnNetwork"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_network"
+            android:padding="8dp"
+            android:text="Network"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/btnDeals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_deals"
+            android:padding="8dp"
+            android:text="Deals"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_star_score"
+            android:drawableTint="@color/textBlue"
+            android:padding="8dp"
+            android:text="Scoreboard"
+            android:textAllCaps="false"
+            android:textColor="@color/textBlue"
+            android:textSize="8dp" />
+
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableTop="@drawable/ic_user"
+            android:drawablePadding="2dp"
+            android:padding="8dp"
+            android:text="My Profile"
+            android:textAllCaps="false"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+
+    <CheckBox
+        android:id="@+id/chkBx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="xyz"
+        android:textColor="@color/textBlack"
+        android:textSize="18dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/chkBx"
+        android:background="@color/background_gray_dark" />
+
+</RelativeLayout>

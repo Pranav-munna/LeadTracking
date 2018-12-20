@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="?android:attr/actionBarSize"
+            android:src="@drawable/ic_back"
+            android:tint="@color/background_white"
+            android:scaleType="centerInside"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text=" Contacts"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/background_gray_dark">
+
+        <EditText
+            android:id="@+id/edtTxtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_round_white"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Search Network"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background_gray" />
+
+</LinearLayout>

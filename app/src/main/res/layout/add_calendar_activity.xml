@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtVwCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Cancel"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="New Event"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:text="Add"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtTxtSubject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:gravity="center_vertical"
+                android:hint="Subject"
+                android:paddingStart="20dp"
+                android:textSize="22dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:gravity="center_vertical"
+                android:hint="Location"
+                android:paddingStart="20dp"
+                android:textSize="22dp" />
+
+            <Switch
+                android:id="@+id/swhAllDay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/background_white"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="All-day"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:id="@+id/llStart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Starts"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwStart"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="date"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEnd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Ends"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="time"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Repeat"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwRepeat"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="Never >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEndRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="End Repeat"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwEndRepeat"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="Never >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTravelTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Travel Time"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwTravelTime"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="None >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Calendar"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwCalendar"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="Work >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInvitees"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Invitees"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/txtVwInvitees"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="None >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Alert"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="None >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="Show As"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_white"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="20dp"
+                    android:text="Busy >"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_white"
+                android:gravity="center_vertical"
+                android:hint="URL"
+                android:paddingStart="20dp"
+                android:textSize="22dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:background="@color/background_white"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingStart="20dp"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

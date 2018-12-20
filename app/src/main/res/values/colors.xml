@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fa6116</color>
+    <color name="colorPrimaryDark">#ea4820</color>
+    <color name="colorAccent">#edebeb</color>
+
+    <color name="textWhite">#edebeb</color>
+    <color name="textBlack">#353535</color>
+    <color name="textHint">#a3a199</color>
+    <color name="textHintDark">#5b5b59</color>
+    <color name="textBlue">#2299dd</color>
+    <color name="textBlueDark">#2d5b80</color>
+    <color name="textRed">#ea4820</color>
+    <color name="textRedLite">#e67c6e</color>
+    <color name="textOrange">#fa6116</color>
+
+    <color name="btnWhite">#e8e7e7</color>
+
+    <color name="background_gray">#edeff1</color>
+    <color name="background_gray_dark">#c2c2c2</color>
+    <color name="background_white">#ffffff</color>
+
+    <color name="clr_ripple">#9dfa6116</color>
+
+    <color name="clr_star_active">#f9c116</color>
+    <color name="clr_star_deactive">#cbcbcb</color>
+    <color name="clr_invisible">#00ffffff</color>
+
+    <color name="iconGrayDark">#9b9c9c</color>
+    <color name="transparentColor">#65000000</color>
+    <color name="transparent">#00ffffff</color>
+
+</resources>

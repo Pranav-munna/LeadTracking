@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            android:tint="@color/btnWhite" />
+
+        <TextView
+            android:id="@+id/txtVwTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Add Notes"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="18dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mnu_dot"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:text="Title"
+        android:textColor="@color/textBlack"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtTxtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/stroke_edittext_background"
+        android:hint="Title"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:text="Note"
+        android:textColor="@color/textBlack"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/stroke_edittext_background"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

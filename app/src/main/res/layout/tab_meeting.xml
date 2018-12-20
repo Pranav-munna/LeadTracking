@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Setup a Meeting"
+            android:textColor="@color/textOrange"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Add People"
+                android:textColor="@color/textHintDark"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imgBtnAddContact"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_add" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Set Date"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/TxtVwDate"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_background_stroke"
+                android:drawableRight="@drawable/ic_calander"
+                android:hint="DD-MM-YY"
+                android:inputType="none"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Set Time"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/TxtVwTime"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/white_background_stroke"
+                android:drawableRight="@drawable/ic_time"
+                android:hint="00:00"
+                android:inputType="none"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Subject"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <EditText
+                android:id="@+id/edtTxtSubject"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/white_background_stroke"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Agenda"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <EditText
+                android:id="@+id/edtTxtAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/white_background_stroke"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Type"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <Spinner
+                android:id="@+id/spnrType"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/white_background_stroke"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="5dp"
+             android:background="@drawable/white_background_stroke"
+             android:gravity="top|left"
+             android:hint="Enter the mesage"
+             android:inputType="textMultiLine"
+             android:lines="8"
+             android:maxLines="10"
+             android:minLines="6"
+             android:padding="10dp"
+             android:scrollbars="vertical"
+             android:textColorHint="@color/textHint" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:text="Location"
+                android:textColor="@color/textHintDark"
+                android:textSize="12dp" />
+
+
+            <Spinner
+                android:id="@+id/spnrLocation"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@drawable/white_background_stroke"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textColor="@color/textBlack"
+                android:textColorHint="@color/textHint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_round_orange"
+            android:text="Set Meeting"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Scheduled  Meeting"
+            android:textColor="@color/textOrange"
+            android:textSize="14sp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rVSheduledMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

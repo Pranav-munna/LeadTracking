@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvNetwork"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/background_white"
+    android:orientation="horizontal"
+    app:cardElevation="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/selectableItemBackground">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cirImgVwProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@color/colorPrimary"
+                app:civ_border_color="@color/background_gray_dark"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/txtVwProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/textWhite"
+                android:textSize="35dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LLdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtVwName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/textBlack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtVwdesig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/textHint"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="18dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtVwLastCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Last Contacted : Not yet contacted"
+                android:textColor="@color/textHint"
+                android:textSize="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/txtVwDes"
+            android:background="@drawable/button_round_orange"
+            android:text="Call"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

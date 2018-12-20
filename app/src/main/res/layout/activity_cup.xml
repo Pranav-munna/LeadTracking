@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.CupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="top"
+            android:paddingLeft="30dp"
+            android:text="Stage update"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtVwClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:padding="10dp"
+            android:textSize="28dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgVwCup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="60dp"
+        android:orientation="horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_cup" />
+
+    <TextView
+        android:id="@+id/txtVwTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Congratulations!"
+        android:textSize="28dp" />
+
+</LinearLayout>

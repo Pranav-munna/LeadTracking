@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <TextView
+        android:id="@+id/txtVwDate"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/stroke_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/vwTop"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/txtVwDate"
+        android:background="@color/background_gray_dark" />
+
+    <TextView
+        android:id="@+id/vwBottom"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/txtVwDate"
+        android:background="@color/background_gray_dark" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirImgVw"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtVwDate"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@color/background_white"
+        app:civ_border_color="@color/textRed"
+        app:civ_border_width="4dp" />
+
+    <TextView
+        android:id="@+id/txtVwTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txtVwEvntName"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtVwTime"
+        android:layout_toRightOf="@+id/cirImgVw"
+        android:gravity="center"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:textSize="14dp" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Orange</string>
+    <string name="test_string">John   mathew Dinner with our team and we had a lot of fun .  this is a test string dfsgdfgadfgdfgadfgdfagv \n agf f \ngd fd fd \ndfvbdf b fb dfb\n fb b bg f g gf bgv s\nfdgb ad fgb fg hh yj yj yt areettyhh f hjh yj y jh</string>
+    <string name="travel_time">Add travel time for this event to your calendar.Event alerts will take this time into account and your calendar will be blocked during this time</string>
+</resources>

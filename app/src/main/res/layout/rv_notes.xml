@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cvNotes"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/background_gray"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rlNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray">
+
+        <TextView
+            android:id="@+id/texVwTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/imgVwDelete"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="Note Name"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imgVwDelete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/iconGrayDark"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/iconGrayDark" />
+
+        <TextView
+            android:id="@+id/txtVwData"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/imgVwDelete"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="6"
+            android:text="@string/test_string"
+            android:textSize="12dp" />
+
+        <View
+            android:id="@+id/vw1"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_below="@+id/txtVwData"
+            android:layout_marginBottom="10dp"
+            android:background="@color/background_gray_dark" />
+
+        <TextView
+            android:id="@+id/txtVwCreated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vw1"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Created: 4 Feb 2018"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
